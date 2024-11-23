@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>Sito prova di Raffo</h1>
+</div>
+<hr>
+<div *ngIf="products">
+  <div *ngFor="let p of products">
+    <p><strong>Nome prodotto:</strong> {{p.product_name}}</p>
+    <p><strong>Fornitore:</strong> {{p.supplier}}</p>
+    <p><strong>Quantità:</strong> {{p.quantity}}</p>
+    <p><strong>Costo unità:</strong> {{p.unit_cost}}</p>
+    <br>
+  </div>
+</div>
